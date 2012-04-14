@@ -1,0 +1,89 @@
+#featured {
+	height: 360px;
+}
+
+#featured .block{
+	padding-left: 0;
+	bottom: 45px;
+}
+
+.artmenu{
+	border: 1px solid #DDD;
+	border-radius: 4px;
+}
+
+.artmenu a .t{
+	padding:0 14px;
+}
+
+.nav .separator{
+	background-image:none;
+}
+
+body {
+	background-image:url('images/bg_with_logo.png');
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-attachment: fixed;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+
+.Sheet {
+	width: 940px;
+	clear: both;
+}
+
+.Sheet-tc{
+	background-image:('images/banner.png');
+	
+}
+
+.PageBackgroundSimpleGradient{
+	margin: auto;
+	position: relative;
+	width: 940px;
+	height: 130px;
+	background-image:url('images/banner.png');
+}
+
+div.Header{
+	height: 20px;
+}
+
+.views-nivo-slider{
+	width:650px;
+	height:300px;
+}
+
+#block-menu-menu-lienket{
+	margin-left:655px;
+	height: 300px;
+}
+
+.contentLayout{
+	width:940px;
+	padding-bottom: 15px;
+}
+
+.contentLayout .content-sidebar1{
+	width:650px;
+}
+
+.Post{
+	margin:0;
+}
+
+.contentLayout .sidebar2{
+	margin-left:670px;
+	float: none;
+	overflow: visible;
+	width:270px;
+}
+
+.Footer, .Footer .Footer-background{
+	width:940px;
+	background-image: url('images/bg_footer.jpg');
+	/*background-repeat: initial;*/
+}
+
