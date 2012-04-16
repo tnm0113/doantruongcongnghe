@@ -11,11 +11,6 @@
   <div class="Post-cc"></div>
   <div class="Post-body">
     <div class="Post-inner">
-      <?php echo $title_prefix; ?>
-      <?php if (!$page): ?>
-        <h2<?php echo $title_attributes; ?>><a href="<?php echo $node_url; ?>"><?php echo $title; ?></a></h2>
-      <?php endif; ?>
-      <?php echo $title_suffix; ?>
       <?php if ($teaser): ?>
         <h2 class="PostHeaderIcon-wrapper"> <span class="PostHeader"><a href="<?php echo $node_url; ?>" title="<?php echo $title; ?>"><?php echo $title; ?></a></span></h2>
       <?php endif; ?>
