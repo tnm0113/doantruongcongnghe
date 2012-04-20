@@ -1,10 +1,103 @@
-#featured {
-	height: 360px;
-}
-
 #featured .block{
 	padding-left: 0;
-	bottom: 45px;
+	float: left;
+	width: 655px;
+	position: relative;
+	margin: 20px 0;
+}
+
+.header-tag-icon {
+	background: none;
+}
+
+.Block {
+	margin: 0 0 20px 0;
+}
+
+.Block-body {
+	background-color: #FBFBFB;
+	border-radius: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #DDD;
+}
+
+.header-tag-icon {
+	padding: 0;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.BlockHeader .t{
+	color: #08c;
+}
+
+.BlockHeader .block-title-link {
+	color: #08c;
+	text-decoration:none;
+}
+
+.BlockHeader .l, .BlockHeader .r {
+	background: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.BlockHeader {
+	margin-bottom: 0;
+	padding: 5px 7px;
+}
+
+.sidebar2 .BlockHeader{
+	text-align: center;
+}
+
+.BlockContent {
+	margin: 10px;
+}
+
+.BlockContent .item-list ul{
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.BlockContent .item-list ul a:hover{
+	color:black;
+	text-decoration:underline;
+}
+
+.PostHeaderIcon-wrapper, .PostHeaderIcon-wrapper a,
+.PostHeaderIcon-wrapper a:link, .PostHeaderIcon-wrapper a:visited {
+	font-family:Arial,Ubuntu;
+	color:black;
+	font-size:22px;
+}
+
+.PostHeaderIcon-wrapper a:hover{
+	font-family:Arial,Ubuntu;
+	text-decoration:underline;
+	font-size:22px;
+}
+
+.content-sidebar1 .BlockContent{
+	margin:auto;
+	margin-right:5px;
+}
+
+.BlockContent-body {
+	padding: 0;
+}
+
+.attachment {
+	border-bottom: 1px dashed;
+}
+
+.Post-body {
+	padding: 0;
+}
+
+.PostHeaderIcon-wrapper {
+	padding: 9px 0 0 9px;
 }
 
 .artmenu{
@@ -31,12 +124,16 @@ body {
 
 .Sheet {
 	width: 940px;
+	margin-top: 10px !important;
 	clear: both;
 }
 
 .Sheet-tc{
 	background-image:('images/banner.png');
-	
+}
+
+.Sheet-body {
+	padding: 0;
 }
 
 .PageBackgroundSimpleGradient{
@@ -51,14 +148,129 @@ div.Header{
 	height: 20px;
 }
 
+.nav .l, .nav .r {
+	display: none;
+}
+
+/**
+ * Nice menus support
+ */
+.block-nice-menus {
+  float:left;
+}
+
+ul.nice-menu {
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  background: #fbfbfb;
+  font-family: Arial,Ubuntu;
+  width: 930px;
+  padding-left: 5px;
+  font-size: 0.9em;
+}
+
+ul.nice-menu li {
+  margin-right: 7px;
+}
+
+ul.nice-menu li a{
+  color: #0088cc;
+  border-radius: 3px;
+  font-size:1.2em;
+  height:auto;
+  padding:10px 5px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul.nice-menu li a:hover,
+ul.nice-menu li.over a{
+  background:#3a87ad;
+  color:white;
+}
+
+ul.nice-menu > li > a:hover {
+  text-decoration: none;
+}
+
+ul.nice-menu li.menuparent ul {
+  background:#3a87ad;
+  margin-top:18px;
+  border-radius:5px;
+  border: none;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+ul.nice-menu li.menuparent ul li {
+  background: none;
+  width:200px;
+}
+
+ul.nice-menu li.menuparent ul li:hover {
+  text-decoration:underline;
+  border-radius:5px;
+}
+
+ul.nice-menu li.over ul li a {
+  line-height:20px;
+  text-transform: none;
+}
+
+ul.nice-menu li.over ul li a:hover {
+  text-decoration:none;
+}
+
+ul.nice-menu-down li {
+	background: none !important;
+	border: none;
+}
+
+#nice-menu-1 li a:hover {
+  text-decoration: none;
+}
+
 .views-nivo-slider{
 	width:650px;
 	height:300px;
 }
 
+.block ul {
+	padding: 0 0 0 0.3em;
+}
+
+ul.menu li {
+	background:url('images/bullet-arrow.gif') no-repeat left center transparent;
+	margin: 0 0 0 0.5em;
+	line-height: 35px;
+	border-bottom: 1px solid #CCC;
+}
+
+ul.menu li.last {
+	border: none;
+}
+
+.menu .leaf a {
+	margin-left: 10px;
+}
+
+a {
+	color: black;
+}
+
+a:hover, a.hover {
+	text-decoration: underline;
+	color: #08C;
+}
+
 #block-menu-menu-lienket{
-	margin-left:655px;
+	margin-left:25px !important;
 	height: 300px;
+	width: 255px !important;
+	border: 1px solid;
+	background: #FBFBFB;
+	border: 1px solid #DDD;
+	border-radius: 3px;
 }
 
 .contentLayout{
@@ -75,10 +287,10 @@ div.Header{
 }
 
 .contentLayout .sidebar2{
-	margin-left:670px;
-	float: none;
+	margin-left: 25px;
+	float: left;
 	overflow: visible;
-	width:270px;
+	width: 260px;
 }
 
 .Footer, .Footer .Footer-background{
@@ -87,3 +299,17 @@ div.Header{
 	/*background-repeat: initial;*/
 }
 
+#block-menu-menu-lienket .content{
+	padding-right:10px;
+}
+
+.field-field-teaser-image{
+	float: left;
+	margin-right: 10px;
+	margin-top: -10px;
+}
+
+/*Font*/
+h1,h2,h3,h4,h5,h6 {
+  font-family: Arial,Ubuntu;
+}

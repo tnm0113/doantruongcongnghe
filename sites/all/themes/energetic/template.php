@@ -148,3 +148,13 @@ function energetic_img_assist_page($content, $attributes = NULL) {
   $output .= '</html>';
   return $output;
 }
+
+function energetic_preprocess_page(&$vars) {
+
+  // Titles are ignored on the front page.
+  $vars['original_title'] = $vars['title'];
+  if ($vars['is_front']) {
+    $vars['title'] = '';
+  }
+
+}

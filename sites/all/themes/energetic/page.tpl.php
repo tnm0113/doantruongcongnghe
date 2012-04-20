@@ -55,15 +55,7 @@
                               $r = NULL; if ($right) $r = right; else if ($sidebar_right) $r = sidebar_right;
                               echo artxGetContentCellStyle($l, $r, $content); ?>">
               <div class="Post">
-                <div class="Post-tl"></div>
-                <div class="Post-tr"></div>
-                <div class="Post-bl"></div>
-                <div class="Post-br"></div>
-                <div class="Post-tc"></div>
-                <div class="Post-bc"></div>
-                <div class="Post-cl"></div>
-                <div class="Post-cr"></div>
-                <div class="Post-cc"></div>
+                
                 <div class="Post-body">
                   <div class="Post-inner">
                     <div class="PostContent">
@@ -98,7 +90,7 @@
       </div>
     </div>
     <div class="cleared"></div>
-      <p class="page-footer"><?php echo $footer_message; ?></p>
+    
     </div>
     <?php print $closure; ?>
   </body>
