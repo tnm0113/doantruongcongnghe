@@ -59,7 +59,7 @@
                 <div class="Post-body">
                   <div class="Post-inner">
                     <div class="PostContent">
-                      <?php if ($breadcrumb): echo theme('breadcrumb', $breadcrumb); endif; ?>
+                      
                       <?php if ($tabs): echo '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
                       <?php if ($title): echo '<h2 class="PostHeaderIcon-wrapper'. ($tabs ? ' with-tabs' : '') .'">'. $title .'</h2>'; endif; ?>
                       <?php if ($tabs): echo $tabs . '</div>'; endif; ?>
@@ -77,6 +77,7 @@
             <?php if ($right) echo '<div class="sidebar2">' . $right . "</div>";
                   else if ($sidebar_right) echo '<div class="sidebar2">' . $sidebar_right . "</div>";?>
           </div>
+
           <div class="cleared"></div>
           <div class="Footer">
             <div class="Footer-inner">

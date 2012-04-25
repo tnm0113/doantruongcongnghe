@@ -1,4 +1,5 @@
 <?php // $Id: block.tpl.php,v 1.1 2009/07/03 07:40:11 agileware Exp $ ?>
+<div class="Block">
   
   <div class="Block-body">
     <?php if ($block->subject): ?>
@@ -18,4 +19,4 @@
       </div>
     </div>
   </div>
-
+</div>

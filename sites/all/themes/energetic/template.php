@@ -159,28 +159,36 @@ function energetic_preprocess_page(&$vars) {
 
 }
 
-function energetic_preprocess_search_theme_form(&$vars, $hook) {
-  
-  // Modify elements of the search form
-  $vars['form']['search_theme_form']['#title'] = t('Search mysite.com');
-  
-  // Set a default value for the search box
-  $vars['form']['search_theme_form']['#value'] = t('Search');
-  
-  // Add a custom class to the search box
-  $vars['form']['search_theme_form']['#attributes'] = array('class' => t('cleardefault'));
-  
-  // Change the text on the submit button
-  $vars['form']['submit']['#value'] = t('Go');
-  
-  // Rebuild the rendered version (search form only, rest remains unchanged)
-  unset($vars['form']['search_theme_form']['#printed']);
-  $vars['search']['search_theme_form'] = drupal_render($vars['form']['search_theme_form']);
-  
-  // Rebuild the rendered version (submit button, rest remains unchanged)
-  unset($vars['form']['submit']['#printed']);
-  $vars['search']['submit'] = drupal_render($vars['form']['submit']);
-  
-  // Collect all form elements to make it easier to print the whole form.
+function energetic_preprocess_search_block_form(&$vars, $hook) {
+    // Modify elements of the search form
+    unset($vars['form']['search_block_form']['#title']);
+
+    // Set a default value for the search box
+  $vars['form']['search_block_form']['#value'] = t('Search this site');
+    
+    // Add a custom class to the search box
+    // Set yourtheme.css > #search-block-form .form-text { color: #888888; }
+  $vars['form']['search_block_form']['#attributes'] = array(
+       'onblur' => "if (this.value == '') {this.value = '".$vars['form']['search_block_form']['#value']."';} this.style.color = '#888888';", 
+         'onfocus' => "if (this.value == '".$vars['form']['search_block_form']['#value']."') {this.value = '';} this.style.color = '#000000';" );
+
+    // Modify elements of the submit button
+    unset($vars['form']['submit']);
+
+    // Change text on the submit button
+    //$vars['form']['submit']['#value'] = t('Go!');
+
+    // Change submit button into image button - NOTE: '#src' leading '/' automatically added
+    $vars['form']['submit']['image_button'] = array('#type' => 'image_button', '#src' => path_to_theme() . '/images/btn-submit.custom.png');
+
+    // Rebuild the rendered version (search form only, rest remains unchanged)
+  unset($vars['form']['search_block_form']['#printed']);
+  $vars['search']['search_block_form'] = drupal_render($vars['form']['search_block_form']);
+
+    // Rebuild the rendered version (submit button, rest remains unchanged)
+    unset($vars['form']['submit']['#printed']);
+    $vars['search']['submit'] = drupal_render($vars['form']['submit']);
+    
+    // Collect all form elements to print entire form
   $vars['search_form'] = implode($vars['search']);
 }
