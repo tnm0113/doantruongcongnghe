@@ -1,15 +1,7 @@
 <?php // $Id: box.tpl.php,v 1.1 2009/07/03 07:40:11 agileware Exp $ ?>
 <div class="box">
   <div class="Block">
-    <div class="Block-tl"></div>
-    <div class="Block-tr"></div>
-    <div class="Block-bl"></div>
-    <div class="Block-br"></div>
-    <div class="Block-tc"></div>
-    <div class="Block-bc"></div>
-    <div class="Block-cl"></div>
-    <div class="Block-cr"></div>
-    <div class="Block-cc"></div>
+    
     <div class="Block-body">
       <?php if ($title): ?>
         <div class="BlockHeader">

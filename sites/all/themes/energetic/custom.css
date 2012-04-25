@@ -19,6 +19,7 @@
 	border-radius: 5px;
 	padding-bottom: 5px;
 	border: 1px solid #DDD;
+	margin-bottom: 20px;
 }
 
 .header-tag-icon {
@@ -97,7 +98,7 @@
 }
 
 .PostHeaderIcon-wrapper {
-	padding: 9px 0 0 9px;
+	padding: 0 0 0 9px;
 }
 
 .artmenu{
@@ -310,6 +311,3 @@ a:hover, a.hover {
 }
 
 /*Font*/
-h1,h2,h3,h4,h5,h6 {
-  font-family: Arial,Ubuntu;
-}
